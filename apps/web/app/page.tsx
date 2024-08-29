@@ -81,7 +81,7 @@ export default function Page() {
   }
 
 
-  const state_balanceOf = async () => {
+  const bank_tokenId = async () => {
     const client = new SovereignClient({
       rest:"http://localhost:12346",
       rpc:"/sov-rpc"
@@ -129,7 +129,7 @@ export default function Page() {
           Check Encrypted Account Balance
         </Button>
         <div className="mt-8 text-xl font-bold">1zdwj8thgev2u3yyrrlekmvtsz4av4tp3m7dm5mx5peejnesga27ss0lusz</div>
-        <Button onClick={state_balanceOf} variant="outline" className="mt-4">
+        <Button onClick={bank_tokenId} variant="outline" className="mt-4">
           Check Decrypted Account Balance
         </Button>
         <div className="mt-8 text-6xl font-bold">1,699,000</div>
