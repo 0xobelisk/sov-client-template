@@ -2,11 +2,11 @@
   "name": "web",
   "version": "1.0.0",
   "private": true,
-  
+
   "scripts": {
     "dev": "next dev --port 3001",
     "build": "next build",
-    "start": "next start",
+    "start": "PORT=4000 next start",
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
